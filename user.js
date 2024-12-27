@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const pool = require("../db");
-const utils = require("../utils");
-const { USER_TABLE } = require("../config");
+const pool = require("./db");
+const utils = require("./utils");
+const { USER_TABLE } = require("./config");
 
 router.post("/register", (request, response) => {
   const { first_name, last_name, email, password } = request.body;
