@@ -14,9 +14,9 @@ app.get("/test", (req, res) => {
 });
 
 // Routes
-const userRoutes = require("./routes/user");
-const bookRoutes = require("./routes/book");
-const purchaseRoutes = require("./routes/purchase");
+const userRoutes = require("./user");
+const bookRoutes = require("./book");
+const purchaseRoutes = require("./purchase");
 
 app.use("/user", userRoutes);
 app.use("/book", bookRoutes);
