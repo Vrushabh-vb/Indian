@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const pool = require("../db");
-const utils = require("../utils");
-const { BOOK_TABLE } = require("../config");
+const pool = require("./db");
+const utils = require("./utils");
+const { BOOK_TABLE } = require("./config");
 
 // Search book by title
 router.get("/title", (request, response) => {
