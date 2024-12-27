@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const pool = require("../db");
-const utils = require("../utils");
-const { USER_TABLE, BOOK_TABLE, PURCHASE_TABLE } = require("../config");
+const pool = require("./db");
+const utils = require("./utils");
+const { USER_TABLE, BOOK_TABLE, PURCHASE_TABLE } = require("./config");
 
 // order a book
 router.post("/order", (request, response) => {
